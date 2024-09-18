@@ -10,6 +10,8 @@
   height: 35px;
   background-image: url("../../assets/icons/brazil-flag.svg");
   background-repeat: no-repeat;
+
+  cursor: pointer;
 }
 
 .english {
@@ -17,6 +19,10 @@
   height: 35px;
   background-image: url("../../assets/icons/usa-flag.svg");
   background-repeat: no-repeat;
+
+  cursor: pointer;
+
+  filter: grayscale(100%);
 }
 
 .unselected {

@@ -1,7 +1,7 @@
 .button {
   width: 200px;
-  height: 50px;
-  border: 2.5px solid var(--white);
+  height: 60px;
+  border: 2.6px solid var(--white);
 
   display: flex;
   align-items: center;
@@ -10,4 +10,6 @@
   font-family: "Epilogue", sans-serif;
   letter-spacing: 0.4rem;
   padding-left: 0.3rem;
+
+  cursor: pointer;
 }
