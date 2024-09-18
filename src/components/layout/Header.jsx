@@ -2,7 +2,7 @@ import styles from "./Header.module.css";
 
 import ThemeButton from "./ThemeButton";
 import Logotipo from "./Logotipo";
-import LanguageButtons from "./languageButtons";
+import LanguageButtons from "./LanguageButtons";
 
 const Header = () => {
   return (
