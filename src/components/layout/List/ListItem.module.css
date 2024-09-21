@@ -1,0 +1,136 @@
+.itemBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.7rem;
+  padding-left: 1rem;
+}
+
+.html5 {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/html5.svg");
+  background-repeat: no-repeat;
+}
+
+.css3 {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/css3.svg");
+  background-repeat: no-repeat;
+}
+
+.js {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/js.svg");
+  background-repeat: no-repeat;
+}
+
+.ts {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/ts.svg");
+  background-repeat: no-repeat;
+}
+
+.react {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/react.svg");
+  background-repeat: no-repeat;
+}
+
+.redux {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/redux.svg");
+  background-repeat: no-repeat;
+}
+
+.node {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/nodejs.svg");
+  background-repeat: no-repeat;
+}
+.mongodb {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/mongodb.svg");
+  background-repeat: no-repeat;
+}
+
+.mongoose {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/mongoose.svg");
+  background-repeat: no-repeat;
+}
+
+.firebase {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/firebase.svg");
+  background-repeat: no-repeat;
+}
+
+.sql {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/sql.svg");
+  background-repeat: no-repeat;
+}
+
+.oracle {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/oracle.svg");
+  background-repeat: no-repeat;
+}
+
+.c {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/c.svg");
+  background-repeat: no-repeat;
+}
+
+.java {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/java.svg");
+  background-repeat: no-repeat;
+}
+
+.python {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/python.svg");
+  background-repeat: no-repeat;
+}
+
+.android {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/android.svg");
+  background-repeat: no-repeat;
+}
+
+.figma {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/figma.svg");
+  background-repeat: no-repeat;
+}
+
+.oracle {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/icons/oracle.svg");
+  background-repeat: no-repeat;
+}

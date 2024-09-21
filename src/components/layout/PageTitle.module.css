@@ -1,0 +1,10 @@
+.titleBox {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-family: "DM Serif Display", serif;
+  font-size: 4rem;
+  color: var(--white);
+}

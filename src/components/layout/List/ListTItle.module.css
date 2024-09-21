@@ -1,0 +1,23 @@
+.titleBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.redLine {
+  width: 8px;
+  height: 34px;
+  background-color: var(--pink);
+}
+
+.blueLine {
+  width: 8px;
+  height: 34px;
+  background-color: var(--blue);
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.6rem;
+  padding-left: 1rem;
+}
