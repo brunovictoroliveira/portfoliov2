@@ -19,3 +19,8 @@
   grid-template-columns: auto auto;
   justify-content: center;
 }
+
+.card:hover {
+  background-image: linear-gradient(to bottom, transparent, black);
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave */
+}
