@@ -20,7 +20,12 @@
   justify-content: center;
 }
 
+.card {
+  z-index: 1;
+}
+
 .card:hover {
-  background-image: linear-gradient(to bottom, transparent, black);
-  transition: opacity 0.3s ease; /* Adiciona uma transição suave */
+  z-index: 2;
+  background-image: linear-gradient(to bottom, white, black);
+  /* transition: opacity 0.3s ease; Adiciona uma transição suave */
 }
