@@ -1,20 +1,28 @@
-import React from "react";
+import styles from "./Form.module.css";
 
 const Form = () => {
   return (
-    <div className="form-container">
-      <div className="left-section">
-        <input type="text" placeholder="Nome" />
-        <input type="text" placeholder="Empresa" />
-        <input type="email" placeholder="E-mail" />
-        <input type="tel" placeholder="Telefone" />
-      </div>
-      <div className="right-section">
-        <textarea placeholder="Mensagem" />
-      </div>
-      <div>
-        <button type="submit">Enviar</button>
-      </div>
+    <div className={styles.container}>
+      <form>
+        <div className={styles.topSection}>
+          <div className={styles.leftSection}>
+            <label htmlFor="name">Nome*:</label>
+            <input type="text" placeholder="Digite seu nome" />
+            <label htmlFor="company">Empresa*:</label>
+            <input type="text" placeholder="Digite o nome da sua empresa" />
+            <label htmlFor="email">E-mail*:</label>
+            <input type="email" placeholder="Digite seu e-mail" />
+            <label htmlFor="phone">Telefone:</label>
+            <input type="tel" placeholder="+00 99 123456789" />
+          </div>
+          <div className={styles.rightSection}>
+            <textarea placeholder="Digite sua mensagem aqui" />
+          </div>
+        </div>
+        <div className={styles.bottomSection}>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
     </div>
   );
 };
