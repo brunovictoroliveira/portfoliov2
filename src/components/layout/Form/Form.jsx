@@ -16,11 +16,12 @@ const Form = () => {
             <input type="tel" placeholder="+00 99 123456789" />
           </div>
           <div className={styles.rightSection}>
+            <label htmlFor="message">Mensagem*:</label>
             <textarea placeholder="Digite sua mensagem aqui" />
           </div>
         </div>
         <div className={styles.bottomSection}>
-          <button type="submit">Enviar</button>
+          <button type="submit">ENVIAR</button>
         </div>
       </form>
     </div>

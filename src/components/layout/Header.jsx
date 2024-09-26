@@ -14,7 +14,7 @@ const Header = () => {
             <li className={styles.selected}>Início</li>
             <li className={styles.unselected}>Habilidades</li>
             <li className={styles.unselected}>Trabalhos</li>
-            <li className={styles.unselected}>Contatos</li>
+            <li className={styles.unselected}>Contato</li>
           </ul>
         </nav>
         <div className={styles.ajustes}>
