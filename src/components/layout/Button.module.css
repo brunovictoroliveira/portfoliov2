@@ -13,3 +13,8 @@
 
   cursor: pointer;
 }
+
+.button:hover {
+  border: 2.6px solid var(--pink);
+  transition: 0.3s;
+}
