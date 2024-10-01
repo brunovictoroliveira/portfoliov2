@@ -1,5 +1,7 @@
 import styles from "./Skills.module.css";
 
+import { Link } from 'react-router-dom';
+
 import PageTitle from "../layout/PageTitle";
 import ListTitle from "../layout/List/ListTitle";
 import ListItem from "../layout/List/ListItem";
@@ -37,7 +39,7 @@ const Skills = () => {
           <ListItem icon="figma" text="Figma" />
         </div>
       </div>
-      <Button title="TRABALHOS" />
+      <Link to="/works"><Button title="TRABALHOS" /></Link>
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import styles from "./Contact.module.css";
 
+import { Link } from "react-router-dom";
+
 import PageTitle from "../layout/PageTitle.jsx";
 import Form from "../layout/Form/Form.jsx";
 
@@ -20,8 +22,15 @@ const Contact = () => {
           <span>obrunovictor31@gmail.com</span>
         </div>
         <div className={styles.buttons}>
-          <div className={styles.linkedin}></div>
-          <div className={styles.github}></div>
+          <Link
+            to="https://www.linkedin.com/in/brunovictorlima/"
+            target="_blank"
+          >
+            <div className={styles.linkedin}></div>
+          </Link>
+          <Link to="https://github.com/brunovictorlima" target="_blank">
+            <div className={styles.github}></div>
+          </Link>
         </div>
         <div className={styles.bvLogoOutlines}></div>
       </div>

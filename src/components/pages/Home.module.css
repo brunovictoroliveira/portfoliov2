@@ -32,12 +32,14 @@
   font-family: "DM Serif Display", serif;
   font-size: 4rem;
   padding-bottom: 3rem;
+
+  color: light-dark(var(--darkgray), var(--white));
 }
 
 .summary {
   font-family: "Gowun Batang", serif;
   font-size: 1.2rem;
-  font-weight: normal;
+  font-weight: bold;
   width: 96%;
   text-align: justify;
   line-height: 2rem;

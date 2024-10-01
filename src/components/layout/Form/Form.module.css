@@ -28,8 +28,10 @@ textarea {
   width: 400px;
   height: 342px;
 
-  background-color: var(--white);
-  color: var(--black);
+  border: none;
+
+  background-color: light-dark(var(--ice), var(--white));
+  color: var(--darkgray);
 }
 
 input {
@@ -37,8 +39,10 @@ input {
   height: 2.5rem;
   margin-bottom: 2rem;
 
-  background-color: var(--white);
-  color: var(--black);
+  border: 1px solid var(--gray);
+
+  background-color: light-dark(var(--ice), var(--white));
+  color: var(--darkgray);
 }
 
 input:last-child {
@@ -86,6 +90,8 @@ textarea:focus {
   padding-left: 0.8rem;
 
   background-color: var(--blue);
+
+  color: var(--white);
 
   cursor: pointer;
 }

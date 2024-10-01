@@ -16,7 +16,9 @@ const Header = () => {
             <li>
               <NavLink
                 to="/"
-                className={({ isActive }) => (isActive ? styles.selected : "")}
+                className={({ isActive }) =>
+                  isActive ? styles.selected : styles.notSelected
+                }
               >
                 Início
               </NavLink>
@@ -24,7 +26,9 @@ const Header = () => {
             <li>
               <NavLink
                 to="/skills"
-                className={({ isActive }) => (isActive ? styles.selected : "")}
+                className={({ isActive }) =>
+                  isActive ? styles.selected : styles.notSelected
+                }
               >
                 Habilidades
               </NavLink>
@@ -32,7 +36,9 @@ const Header = () => {
             <li>
               <NavLink
                 to="/works"
-                className={({ isActive }) => (isActive ? styles.selected : "")}
+                className={({ isActive }) =>
+                  isActive ? styles.selected : styles.notSelected
+                }
               >
                 Trabalhos
               </NavLink>
@@ -40,7 +46,9 @@ const Header = () => {
             <li>
               <NavLink
                 to="/contact"
-                className={({ isActive }) => (isActive ? styles.selected : "")}
+                className={({ isActive }) =>
+                  isActive ? styles.selected : styles.notSelected
+                }
               >
                 Contato
               </NavLink>

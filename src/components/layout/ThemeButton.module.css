@@ -3,7 +3,7 @@
   height: 35px;
   border-radius: 30px;
 
-  background-color: var(--black);
+  background-color: light-dark(var(--lightgray), var(--black));
 
   display: flex;
   flex-direction: row;
@@ -13,7 +13,7 @@
 }
 
 .circle {
-  background-color: var(--lightgray);
+  background-color: var(--gray);
   width: 25px;
   height: 25px;
   border-radius: 50%;

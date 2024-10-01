@@ -155,13 +155,16 @@ img {
 
 :root {
   color-scheme: light dark;
-  color: var(--white);
-  background-color: var(--black);
+  background-color: light-dark(var(--white), var(--black));
+  color: light-dark(var(--darkgray), var(--white));
 
   --pink: #ff003d;
   --blue: #00b2ff;
   --darkblue: #0092d1;
+  --lightpurple: #8c54b7;
+  --purple: #662d91;
   --white: #ffffff;
+  --ice: #ebebeb;
   --lightgray: #c0c0c0;
   --gray: #888888;
   --darkgray: #222222;

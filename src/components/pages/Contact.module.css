@@ -43,7 +43,7 @@
   align-items: center;
   justify-content: center;
 
-  background-color: white;
+  background-color: var(--white);
 }
 
 .gmailLogo:hover {
@@ -74,6 +74,8 @@
   background-image: url("../../assets/icons/linkedin.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  cursor: pointer;
 }
 
 .github {
@@ -83,6 +85,8 @@
   background-image: url("../../assets/icons/github.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  cursor: pointer;
 }
 
 .linkedin:hover {

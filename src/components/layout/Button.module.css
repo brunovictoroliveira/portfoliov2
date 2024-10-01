@@ -1,13 +1,14 @@
 .button {
   width: 200px;
   height: 60px;
-  border: 2.6px solid var(--white);
+  border: 2.6px solid light-dark(var(--darkgray), var(--white));
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   font-family: "Epilogue", sans-serif;
+  font-weight: 600;
   letter-spacing: 0.4rem;
   padding-left: 0.3rem;
 
@@ -15,6 +16,8 @@
 }
 
 .button:hover {
-  border: 2.6px solid var(--pink);
+  border: 2.6px solid light-dark(var(--blue), var(--pink));
   transition: 0.3s;
+
+  color: light-dark(var(--blue), var(--pink));
 }

@@ -1,4 +1,7 @@
 import styles from "./Home.module.css";
+
+import { Link } from 'react-router-dom';
+
 import Photo from "../../assets/imgs/avatar_photo.png";
 import Button from "../layout/Button";
 
@@ -26,7 +29,7 @@ const Home = () => {
             toco instrumentos musicais.
           </p>
         </div>
-        <Button title="HABILIDADES" />
+        <Link to="/skills"><Button title="HABILIDADES" /></Link>        
       </div>
       <div className={styles.box2}>
         <div className={styles.photo}>
