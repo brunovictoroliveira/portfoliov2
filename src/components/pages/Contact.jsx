@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 
 import PageTitle from "../layout/PageTitle.jsx";
 import Form from "../layout/Form/Form.jsx";
+import Message from "../layout/Message.jsx";
 
 import GmailIcon from "../../assets/icons/gmail.svg";
 
 const Contact = () => {
   return (
     <div className={styles.container}>
+      <Message msg="Alguma mensagem" type="success" />
       <div className={styles.leftSection}>
         <PageTitle title="Entre em contato" />
         <Form />
