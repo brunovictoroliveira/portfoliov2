@@ -1,7 +1,7 @@
 .button {
   width: 200px;
   height: 60px;
-  border: 2.6px solid light-dark(var(--darkgray), var(--white));
+  /* border: 2.6px solid light-dark(var(--darkgray), var(--white)); */
 
   display: flex;
   align-items: center;
@@ -15,9 +15,21 @@
   cursor: pointer;
 }
 
-.button:hover {
+/* .button:hover {
   border: 2.6px solid light-dark(var(--blue), var(--pink));
   transition: 0.3s;
 
   color: light-dark(var(--blue), var(--pink));
+} */
+
+/* Nova abordagem */
+
+.button {
+  border: 2.6px solid var(--button-border-color);
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  border-color: var(--button-hover-border-color);
+  color: var(--button-hover-text-color);
 }

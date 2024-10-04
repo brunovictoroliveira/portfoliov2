@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import styles from "./ThemeButton.module.css";
 
 import { useState, useEffect } from "react";
@@ -24,6 +24,11 @@ const ThemeButton = ({ currentTheme, toggleTheme }) => {
       ></div>
     </div>
   );
+};
+
+ThemeButton.propTypes = {
+  currentTheme: PropTypes.oneOf(["light", "dark"]).isRequired, // Deve ser 'light' ou 'dark'
+  toggleTheme: PropTypes.func.isRequired, // toggleTheme é uma função obrigatória
 };
 
 export default ThemeButton;

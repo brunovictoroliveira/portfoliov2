@@ -153,7 +153,9 @@ img {
 /*end RESET
 --------------------*/
 
-:root {
+/* Abordagem antiga */
+
+/* :root {
   color-scheme: dark light;
   background-color: light-dark(var(--white), var(--black));
   color: light-dark(var(--darkgray), var(--white));
@@ -169,7 +171,63 @@ img {
   --gray: #888888;
   --darkgray: #222222;
   --black: #1b1b1b;
+} */
+
+:root {
+  --pink: #ff003d;
+  --blue: #00b2ff;
+  --darkblue: #0092d1;
+  --lightpurple: #8c54b7;
+  --purple: #662d91;
+  --white: #ffffff;
+  --ice: #ebebeb;
+  --lightgray: #c0c0c0;
+  --gray: #888888;
+  --darkgray: #222222;
+  --black: #1b1b1b;
 }
+
+.light {
+  --background-color: var(--white);
+  --text-color: var(--darkgray);
+  --input-bg-color: var(--ice);
+  --input-text-color: var(--darkgray);
+  --button-border-color: var(--darkgray);
+  --button-hover-border-color: var(--blue);
+  --button-hover-text-color: var(--blue);
+  --header-bg-color: var(--ice);
+  --selected-bg-color: var(--lightgray);
+  --selected-text-color: var(--white);
+  --title-color: var(--gray);
+  --theme-button-bg: var(--lightgray);
+  --theme-button-circle-bg: var(--gray);
+}
+
+.dark {
+  --background-color: var(--black);
+  --text-color: var(--white);
+  --input-bg-color: var(--white);
+  --input-text-color: var(--darkgray);
+  --button-border-color: var(--white);
+  --button-hover-border-color: var(--pink);
+  --button-hover-text-color: var(--pink);
+  --header-bg-color: var(--darkgray);
+  --selected-bg-color: var(--black);
+  --selected-text-color: var(--white);
+  --title-color: var(--white);
+  --theme-button-bg: var(--gray);
+  --theme-button-circle-bg: var(--black);
+}
+
+/* \/ Testar aqui ou em App.css */
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cola para usar as 4 fontes do projeto */
 
 /*
 font-family: "Epilogue", sans-serif;

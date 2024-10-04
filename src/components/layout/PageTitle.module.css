@@ -7,5 +7,12 @@
   font-family: "DM Serif Display", serif;
   font-size: 4rem;
 
-  color: light-dark(var(--gray), var(--white));
+  /* color: light-dark(var(--gray), var(--white)); */
+}
+
+/* Nova abordagem */
+
+.title {
+  color: var(--title-color);
+  transition: color 0.3s ease;
 }

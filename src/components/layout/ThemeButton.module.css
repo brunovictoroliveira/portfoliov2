@@ -3,7 +3,7 @@
   height: 35px;
   border-radius: 30px;
 
-  background-color: light-dark(var(--lightgray), var(--gray));
+  /* background-color: light-dark(var(--lightgray), var(--gray)); */
 
   display: flex;
   flex-direction: row;
@@ -14,11 +14,23 @@
 }
 
 .button .circle {
-  background-color: light-dark(var(--gray), var(--black));
+  /* background-color: light-dark(var(--gray), var(--black)); */
   width: 27px;
   height: 27px;
   border-radius: 50%;
   display: block;
   position: absolute;
-  transition: left 0.5s ease;
+  /* transition: left 0.5s ease; */
+}
+
+/* Nova abordagem */
+
+.button {
+  background-color: var(--theme-button-bg);
+  transition: background-color 0.3s ease;
+}
+
+.button .circle {
+  background-color: var(--theme-button-circle-bg);
+  transition: background-color 0.3s ease, left 0.5s ease;
 }

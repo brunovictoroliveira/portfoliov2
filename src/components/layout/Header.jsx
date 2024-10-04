@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import styles from "./Header.module.css";
 
@@ -11,7 +11,7 @@ const Header = ({ currentTheme, toggleTheme }) => {
   return (
     <>
       <header className={styles.header}>
-        <Logotipo />
+        <Logotipo currentTheme={currentTheme} />
         <nav>
           <ul>
             <li>
@@ -63,6 +63,11 @@ const Header = ({ currentTheme, toggleTheme }) => {
       </header>
     </>
   );
+};
+
+Header.propTypes = {
+  currentTheme: PropTypes.oneOf(["light", "dark"]).isRequired, // Define que o tema deve ser 'light' ou 'dark'
+  toggleTheme: PropTypes.func.isRequired, // toggleTheme é uma função obrigatória
 };
 
 export default Header;

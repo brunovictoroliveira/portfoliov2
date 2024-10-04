@@ -26,16 +26,12 @@
   height: auto;
 
   justify-content: space-between;
-
-  /* border: 1px solid palegreen; */
 }
 
 .title {
   font-family: "DM Serif Display", serif;
   font-size: 3.3rem;
   padding-bottom: 3rem;
-
-  color: light-dark(var(--darkgray), var(--white));
 }
 
 .summary {
@@ -48,8 +44,6 @@
   line-height: 2rem;
 
   padding-bottom: 2rem;
-
-  /* border: 1px solid pink; */
 }
 
 .box2 {

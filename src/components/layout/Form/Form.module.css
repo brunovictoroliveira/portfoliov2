@@ -30,8 +30,8 @@ textarea {
 
   border: none;
 
-  background-color: light-dark(var(--ice), var(--white));
-  color: var(--darkgray);
+  /* background-color: light-dark(var(--ice), var(--white)); */
+  /* color: var(--darkgray); */
 }
 
 input {
@@ -41,9 +41,20 @@ input {
 
   border: 1px solid var(--gray);
 
-  background-color: light-dark(var(--ice), var(--white));
-  color: var(--darkgray);
+  /* background-color: light-dark(var(--ice), var(--white)); */
+  /* color: var(--darkgray); */
 }
+
+/* INÍCIO - Nova abordagem */
+
+textarea,
+input {
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* FIM - Nova abordagem */
 
 input:last-child {
   margin-bottom: 0;
