@@ -154,7 +154,7 @@ img {
 --------------------*/
 
 :root {
-  color-scheme: light dark;
+  color-scheme: dark light;
   background-color: light-dark(var(--white), var(--black));
   color: light-dark(var(--darkgray), var(--white));
 

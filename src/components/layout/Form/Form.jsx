@@ -36,6 +36,7 @@ const Form = () => {
       )
       .then(
         (response) => {
+          alert("Mensagem enviada com sucesso!");
           console.log("EMAIL ENVIADO", response.status, response.text);
           setName("");
           setCompany("");
