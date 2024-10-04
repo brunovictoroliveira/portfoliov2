@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 
 import styles from "./Header.module.css";
@@ -6,7 +7,7 @@ import ThemeButton from "./ThemeButton";
 import Logotipo from "./Logotipo";
 import LanguageButtons from "./LanguageButtons";
 
-const Header = () => {
+const Header = ({ currentTheme, toggleTheme }) => {
   return (
     <>
       <header className={styles.header}>
@@ -56,7 +57,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className={styles.ajustes}>
-          <ThemeButton />
+          <ThemeButton currentTheme={currentTheme} toggleTheme={toggleTheme} />
           <LanguageButtons />
         </div>
       </header>

@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header currentTheme={theme} toggleTheme={toggleTheme} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<Skills />} />

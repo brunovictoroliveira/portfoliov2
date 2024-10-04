@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from "./ThemeButton.module.css";
 
 import { useState, useEffect } from "react";
