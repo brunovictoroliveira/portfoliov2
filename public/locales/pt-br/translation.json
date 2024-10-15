@@ -1,0 +1,27 @@
+{
+  "nav_option1": "Início",
+  "nav_option2": "Habilidades",
+  "nav_option3": "Trabalhos",
+  "nav_option4": "Contato",
+
+  "home_title": "Olá, \nme chamo Bruno Victor, \nsou Desenvolvedor Full Stack",
+  "home_summary": "Tenho cerca de 10 anos de experiência como Designer Gráfico e sempre fui apaixonado por tecnologia. Em 2020 iniciei a graduação em Análise e Desenvolvimento de Sistemas na UERJ (Universidade do Estado do Rio de Janeiro). \n\n Tenho uma personalidade criativa e curiosa. Nas horas vagas gosto de ler sobre novidades de Ciência e Tecnologia, Mitologia, Sci-Fi, Filosofia, Psicologia e Antropologia. Também desenho, componho e toco instrumentos musicais.",
+  "home_navigation_button": "HABILIDADES",
+
+  "skills_title": "Habilidades",
+  "skills_subtitle1": "Front-End Stack",
+  "skills_subtitle2": "Back-End Stack",
+  "skills_subtitle3": "Outras linguagens e techs",
+  "skills_navigation_button": "TRABALHOS",
+
+  "works_title": "Trabalhos",
+  "works_navigation_button": "CONTATO",
+
+  "contact_title": "Entre em contato",
+  "contact_form_name": "Nome",
+  "contact_form_company": "Empresa",
+  "contact_form_email": "E-mail",
+  "contact_form_phone": "Telefone",
+  "contact_form_message": "Mensagem",
+  "contact_form_submit": "ENVIAR"
+}
