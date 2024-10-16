@@ -4,6 +4,9 @@ import { useState } from "react";
 
 import emailjs from "@emailjs/browser";
 
+import "../../../i18n";
+import { useTranslation } from "react-i18next";
+
 const Form = () => {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
@@ -50,51 +53,53 @@ const Form = () => {
       );
   };
 
+  const { t, i18n } = useTranslation(); // Hook para acessar as traduçõe
+
   return (
     <div className={styles.container}>
       <form className={styles.form} onSubmit={sendEmail}>
         <div className={styles.topSection}>
           <div className={styles.leftSection}>
-            <label htmlFor="name">Nome*:</label>
+            <label htmlFor="name">{t("contact.formlabel1")}*:</label>
             <input
               type="text"
-              placeholder="Digite seu nome"
+              placeholder={t("contact.placeholder1")}
               onChange={(e) => setName(e.target.value)}
               value={name}
             />
-            <label htmlFor="company">Empresa*:</label>
+            <label htmlFor="company">{t("contact.formlabel2")}*:</label>
             <input
               type="text"
-              placeholder="Digite o nome da sua empresa"
+              placeholder={t("contact.placeholder2")}
               onChange={(e) => setCompany(e.target.value)}
               value={company}
             />
-            <label htmlFor="email">E-mail*:</label>
+            <label htmlFor="email">{t("contact.formlabel3")}*:</label>
             <input
               type="email"
-              placeholder="Digite seu e-mail"
+              placeholder={t("contact.placeholder3")}
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />
-            <label htmlFor="phoneNumber">Telefone:</label>
+            <label htmlFor="phoneNumber">{t("contact.formlabel4")}:</label>
             <input
               type="tel"
-              placeholder="+00 99 123456789"
+              placeholder={t("contact.placeholder4")}
               onChange={(e) => setPhoneNumber(e.target.value)}
               value={phoneNumber}
             />
           </div>
           <div className={styles.rightSection}>
-            <label htmlFor="message">Mensagem*:</label>
+            <label htmlFor="message">{t("contact.formlabel5")}*:</label>
             <textarea
-              placeholder="Digite sua mensagem aqui"
+              placeholder={t("contact.placeholder5")}
               onChange={(e) => setMessage(e.target.value)}
               value={message}
             />
           </div>
         </div>
         <div className={styles.bottomSection}>
-          <button type="submit">ENVIAR</button>
+          <button type="submit">{t("contact.formsubmit")}</button>
         </div>
       </form>
     </div>

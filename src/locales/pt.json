@@ -1,0 +1,40 @@
+{
+  "nav.option1": "Início",
+  "nav.option2": "Habilidades",
+  "nav.option3": "Trabalhos",
+  "nav.option4": "Contato",
+
+  "home.firstsentence": "Olá!",
+  "home.secondsentence": "Me chamo ",
+  "home.thirdsentence": "Bruno Victor",
+  "home.fourthsentence": "sou ",
+  "home.fifthsentence": "Desenvolvedor Full Stack",
+  "home.summaryp1": "Tenho cerca de 10 anos de experiência como Designer Gráfico e sempre fui apaixonado por tecnologia. Em 2020 iniciei a graduação em Análise e Desenvolvimento de Sistemas na UERJ (Universidade do Estado do Rio de Janeiro).",
+  "home.summaryp2": "Tenho uma personalidade criativa e curiosa. Nas horas vagas gosto de ler sobre novidades de Ciência e Tecnologia, Mitologia, Sci-Fi, Filosofia, Psicologia e Antropologia. Também desenho, componho e toco instrumentos musicais.",
+  "home.navigationbutton": "HABILIDADES",
+  "home.alttext": "Foto de Bruno Victor",
+
+  "skills.title": "Habilidades",
+  "skills.subtitle1": "Front-End Stack",
+  "skills.subtitle2": "Back-End Stack",
+  "skills.subtitle3": "Outras linguagens e techs",
+  "skills.navigationbutton": "TRABALHOS",
+
+  "works.title": "Trabalhos",
+  "works.navigationbutton": "CONTATO",
+  "works.githubbutton": "Acessar repositório",
+
+  "contact.title": "Entre em contato",
+  "contact.formlabel1": "Nome",
+  "contact.formlabel2": "Empresa",
+  "contact.formlabel3": "E-mail",
+  "contact.formlabel4": "Telefone",
+  "contact.formlabel5": "Mensagem",
+  "contact.formsubmit": "ENVIAR",
+
+  "contact.placeholder1": "Digite seu nome",
+  "contact.placeholder2": "Digite o nome da sua empresa",
+  "contact.placeholder3": "Digite seu e-mail",
+  "contact.placeholder4": "+00 99 123456789",
+  "contact.placeholder5": "Digite sua mensagem aqui"
+}

@@ -2,6 +2,9 @@ import styles from "./Works.module.css";
 
 import { Link } from "react-router-dom";
 
+import "../../i18n";
+import { useTranslation } from "react-i18next";
+
 import PageTitle from "../layout/PageTitle.jsx";
 import Button from "../layout/Button.jsx";
 import GithubButton from "../layout/GithubButton.jsx";
@@ -14,9 +17,11 @@ import ImgToDoList from "../../assets/imgs/todolist.png";
 import ImgPortfolio from "../../assets/imgs/home-portfolio-light.png";
 
 const Works = () => {
+  const { t, i18n } = useTranslation(); // Hook para acessar as traduções
+
   return (
     <div className={styles.container}>
-      <PageTitle title="Trabalhos" />
+      <PageTitle title={t("works.title")} />
       <div className={styles.mainBox}>
         <div className={styles.card}>
           <img
@@ -106,7 +111,7 @@ const Works = () => {
         </div>
       </div>
       <Link to="/contact">
-        <Button title="CONTATO" />
+        <Button title={t("works.navigationbutton")} />
       </Link>
     </div>
   );

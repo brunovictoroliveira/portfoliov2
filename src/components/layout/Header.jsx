@@ -3,11 +3,16 @@ import PropTypes from "prop-types";
 
 import styles from "./Header.module.css";
 
+import "../../i18n";
+import { useTranslation } from "react-i18next";
+
 import ThemeButton from "./ThemeButton";
 import Logotipo from "./Logotipo";
 import LanguageButtons from "./LanguageButtons";
 
 const Header = ({ currentTheme, toggleTheme }) => {
+  const { t, i18n } = useTranslation(); // Hook para acessar as traduções
+
   return (
     <>
       <header className={styles.header}>
@@ -21,7 +26,7 @@ const Header = ({ currentTheme, toggleTheme }) => {
                   isActive ? styles.selected : styles.notSelected
                 }
               >
-                Início
+                {t("nav.option1")}
               </NavLink>
             </li>
             <li>
@@ -31,7 +36,7 @@ const Header = ({ currentTheme, toggleTheme }) => {
                   isActive ? styles.selected : styles.notSelected
                 }
               >
-                Habilidades
+                {t("nav.option2")}
               </NavLink>
             </li>
             <li>
@@ -41,7 +46,7 @@ const Header = ({ currentTheme, toggleTheme }) => {
                   isActive ? styles.selected : styles.notSelected
                 }
               >
-                Trabalhos
+                {t("nav.option3")}
               </NavLink>
             </li>
             <li>
@@ -51,7 +56,7 @@ const Header = ({ currentTheme, toggleTheme }) => {
                   isActive ? styles.selected : styles.notSelected
                 }
               >
-                Contato
+                {t("nav.option4")}
               </NavLink>
             </li>
           </ul>

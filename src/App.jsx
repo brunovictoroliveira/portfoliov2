@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
+import "./i18n.js"; // Importa o arquivo de configuração do i18n
+
 import Header from "./components/layout/Header.jsx";
 
 import Home from "./components/pages/Home.jsx";

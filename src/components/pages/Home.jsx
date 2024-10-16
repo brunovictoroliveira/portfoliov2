@@ -1,39 +1,41 @@
 import styles from "./Home.module.css";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
+import "../../i18n";
+import { useTranslation } from "react-i18next";
 
 import Photo from "../../assets/imgs/avatar_photo.png";
 import Button from "../layout/Button";
 
 const Home = () => {
+  const { t, i18n } = useTranslation(); // Hook para acessar as traduções
+
   return (
     <div className={styles.container}>
       <div className={styles.box1}>
         <div className={styles.homeText}>
           <h1 className={styles.title}>
-            Olá,<br></br>
-            me chamo <span className={styles.blue}>Bruno Victor,</span>
-            <br></br>sou{" "}
-            <span className={styles.pink}>Desenvolvedor Full Stack</span>
+            {t("home.firstsentence")}
+            <br></br>
+            {t("home.secondsentence")}
+            <span className={styles.blue}>{t("home.thirdsentence")},</span>
+            <br></br>
+            {t("home.fourthsentence")}
+            <span className={styles.pink}>{t("home.fifthsentence")}</span>
+            <br></br>
           </h1>
-          <p className={styles.summary}>
-            Tenho cerca de 10 anos de experiência como Designer Gráfico e sempre
-            fui apaixonado por tecnologia. Em 2020 iniciei a graduação em
-            Análise e Desenvolvimento de Sistemas na UERJ (Universidade do
-            Estado do Rio de Janeiro).
-            <br></br>
-            <br></br>
-            Tenho uma personalidade criativa e curiosa. Nas horas vagas gosto de
-            ler sobre novidades de Ciência e Tecnologia, Mitologia, Sci-Fi,
-            Filosofia, Psicologia e Antropologia. Também desenho, componho e
-            toco instrumentos musicais.
-          </p>
+          <p className={styles.summary}>{t("home.summaryp1")}</p>
+          <br></br>
+          <p className={styles.summary}>{t("home.summaryp2")}</p>
         </div>
-        <Link to="/skills"><Button title="HABILIDADES" /></Link>        
+        <Link to="/skills">
+          <Button title={t("home.navigationbutton")} />
+        </Link>
       </div>
       <div className={styles.box2}>
         <div className={styles.photo}>
-          <img src={Photo} alt="Foto de Bruno Victor" />
+          <img src={Photo} alt={t("home.alttext")} />
         </div>
       </div>
     </div>

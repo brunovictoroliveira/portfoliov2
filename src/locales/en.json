@@ -1,0 +1,40 @@
+{
+  "nav.option1": "Home",
+  "nav.option2": "Skills",
+  "nav.option3": "Works",
+  "nav.option4": "Contact",
+
+  "home.firstsentence": "Hi! ",
+  "home.secondsentence": "I'm ",
+  "home.thirdsentence": "Bruno Victor",
+  "home.fourthsentence": "a ",
+  "home.fifthsentence": "Full Stack Developer",
+  "home.summaryp1": "I have about 10 years of experience as a Graphic Designer and have always been passionate about technology. In 2020, I started my degree in Systems Analysis and Development at UERJ (State University of Rio de Janeiro).",
+  "home.summaryp2": "I have a creative and curious personality. In my spare time, I like to read about Science and Technology news, Mythology, Sci-Fi, Philosophy, Psychology, and Anthropology. I also draw, compose, and play musical instruments.",
+  "home.navigationbutton": "SKILLS",
+  "home.alttext": "Bruno Victor's photo",
+
+  "skills.title": "Hard Skills",
+  "skills.subtitle1": "Front-End Stack",
+  "skills.subtitle2": "Back-End Stack",
+  "skills.subtitle3": "Other languages and techs",
+  "skills.navigationbutton": "WORKS",
+
+  "works.title": "Works",
+  "works.navigationbutton": "CONTACT",
+  "works.githubbutton": "Access repository",
+
+  "contact.title": "Get in touch",
+  "contact.formlabel1": "Name",
+  "contact.formlabel2": "Company",
+  "contact.formlabel3": "Email",
+  "contact.formlabel4": "Phone",
+  "contact.formlabel5": "Message",
+  "contact.formsubmit": "SUBMIT",
+
+  "contact.placeholder1": "Enter your name",
+  "contact.placeholder2": "Enter your company's name",
+  "contact.placeholder3": "Enter your email",
+  "contact.placeholder4": "+00 99 123456789",
+  "contact.placeholder5": "Enter your message here"
+}

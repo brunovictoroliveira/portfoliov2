@@ -2,16 +2,21 @@ import styles from "./Contact.module.css";
 
 import { Link } from "react-router-dom";
 
+import "../../i18n";
+import { useTranslation } from "react-i18next";
+
 import PageTitle from "../layout/PageTitle.jsx";
 import Form from "../layout/Form/Form.jsx";
 
 import GmailIcon from "../../assets/icons/gmail.svg";
 
 const Contact = () => {
+  const { t, i18n } = useTranslation(); // Hook para acessar as traduções
+
   return (
     <div className={styles.container}>
       <div className={styles.leftSection}>
-        <PageTitle title="Entre em contato" />
+        <PageTitle title={t("contact.title")} />
         <Form />
       </div>
       <div className={styles.rightSection}>
