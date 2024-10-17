@@ -3,21 +3,14 @@
   flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
-
   width: auto;
 }
 
-.ptbr {
-  max-width: 65px;
-  height: 40px;
-  cursor: pointer;
-}
-
+.ptbr,
 .english {
   max-width: 65px;
   height: 40px;
   cursor: pointer;
-  filter: grayscale(100%);
 }
 
 .unselected {
