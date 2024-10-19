@@ -8,6 +8,7 @@ import "../../../i18n";
 import { useTranslation } from "react-i18next";
 
 const Form = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
@@ -52,8 +53,6 @@ const Form = () => {
         }
       );
   };
-
-  const { t, i18n } = useTranslation(); // Hook para acessar as traduçõe
 
   return (
     <div className={styles.container}>

@@ -29,9 +29,6 @@ textarea {
   height: 342px;
 
   border: none;
-
-  /* background-color: light-dark(var(--ice), var(--white)); */
-  /* color: var(--darkgray); */
 }
 
 input {
@@ -40,12 +37,7 @@ input {
   margin-bottom: 2rem;
 
   border: 1px solid var(--gray);
-
-  /* background-color: light-dark(var(--ice), var(--white)); */
-  /* color: var(--darkgray); */
 }
-
-/* INÍCIO - Nova abordagem */
 
 textarea,
 input {
@@ -53,8 +45,6 @@ input {
   color: var(--input-text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-/* FIM - Nova abordagem */
 
 input:last-child {
   margin-bottom: 0;
@@ -110,4 +100,10 @@ textarea:focus {
 .bottomSection button:hover {
   background-color: var(--pink);
   transition: 0.3s;
+}
+
+@media (max-width: 971px) {
+  textarea {
+    width: 340px;
+  }
 }

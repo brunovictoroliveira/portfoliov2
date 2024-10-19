@@ -1,7 +1,6 @@
 .header {
-  max-width: 100vw;
+  max-width: 100%;
   height: 80px;
-  /* background-color: light-dark(var(--ice), var(--darkgray)); */
 
   font-family: "Roboto Slab", serif;
 
@@ -10,25 +9,40 @@
   align-items: center;
 
   justify-content: space-between;
+}
+
+.headerBg {
+  height: 80px;
+  background-color: var(--header-bg-color);
+  transition: background-color 0.3s ease;
 
   padding: 0 200px;
 }
 
-nav {
+.menu {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-nav ul {
+.nav ul {
   width: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-nav ul li {
+.nav ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,10 +73,6 @@ nav ul li {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
-  /* color: light-dark(var(--white), var(--white)); */
-
-  /* background-color: light-dark(var(--lightgray), var(--black)); */
 }
 
 .ajustes {
@@ -74,14 +84,120 @@ nav ul li {
   gap: 2rem;
 }
 
-/* Nova abordagem */
-
-.header {
-  background-color: var(--header-bg-color);
-  transition: background-color 0.3s ease;
-}
-
 .selected {
   color: var(--selected-text-color);
   background-color: var(--selected-bg-color);
+}
+
+.menuButton {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1919px) {
+  .headerBg {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1370px) {
+  .headerBg {
+    padding: 0 50px;
+    height: 80px;
+  }
+
+  .menu {
+    width: 73%;
+  }
+
+  .nav ul {
+    width: 400px;
+  }
+
+  .nav ul li {
+    font-size: 1rem;
+  }
+
+  .ajustes {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 971px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menuButton {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+  }
+
+  .headerBg {
+    width: 100vw;
+
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    width: 668px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.actived {
+    display: flex;
+
+    width: 200px;
+    height: 500px;
+    flex-direction: column;
+    background-color: yellow;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav ul {
+    width: 100px;
+    height: 200px;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .ajustes {
+    flex-direction: column;
+  }
 }

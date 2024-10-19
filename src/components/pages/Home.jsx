@@ -1,43 +1,60 @@
 import styles from "./Home.module.css";
 
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "../../i18n";
 import { useTranslation } from "react-i18next";
 
-import Photo from "../../assets/imgs/avatar_photo.png";
 import Button from "../layout/Button";
 
 const Home = () => {
-  const { t, i18n } = useTranslation(); // Hook para acessar as traduções
+  const { t } = useTranslation();
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
+
+  const updateMedia = () => {
+    setIsDesktop(window.innerWidth > 1024);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  }, []);
 
   return (
     <div className={styles.container}>
-      <div className={styles.box1}>
-        <div className={styles.homeText}>
-          <h1 className={styles.title}>
-            {t("home.firstsentence")}
+      <div className={styles.mainBox}>
+        <div className={styles.box1}>
+          <div className={styles.title}>
+            <span>{t("home.firstsentence")}</span>
             <br></br>
-            {t("home.secondsentence")}
-            <span className={styles.blue}>{t("home.thirdsentence")},</span>
+            <span>{t("home.secondsentence")}</span>
+            <span className={styles.blue}>{t("home.thirdsentence")}</span>
             <br></br>
-            {t("home.fourthsentence")}
+            <span>{t("home.fourthsentence")}</span>
             <span className={styles.pink}>{t("home.fifthsentence")}</span>
             <br></br>
-          </h1>
+          </div>
           <p className={styles.summary}>{t("home.summaryp1")}</p>
           <br></br>
           <p className={styles.summary}>{t("home.summaryp2")}</p>
+          {/* Renderizar o botão apenas para telas desktop */}
+          {isDesktop && (
+            <Link to="/skills">
+              <Button title={t("home.navigationbutton")} />
+            </Link>
+          )}
         </div>
-        <Link to="/skills">
-          <Button title={t("home.navigationbutton")} />
-        </Link>
+        <div className={styles.photo}></div>
       </div>
-      <div className={styles.box2}>
-        <div className={styles.photo}>
-          <img src={Photo} alt={t("home.alttext")} />
+      {/* Renderizar o botão fora dos boxes para tablets e smartphones */}
+      {!isDesktop && (
+        <div className={styles.buttonOutside}>
+          <Link to="/skills">
+            <Button title={t("home.navigationbutton")} />
+          </Link>
         </div>
-      </div>
+      )}
     </div>
   );
 };

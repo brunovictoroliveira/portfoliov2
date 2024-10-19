@@ -40,3 +40,13 @@
 
   color: var(--white);
 }
+
+@media (min-width: 972px) and (max-width: 1280px) {
+  .button {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    right: 0;
+    bottom: 0;
+  }
+}

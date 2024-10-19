@@ -31,10 +31,10 @@
   "contact.formlabel4": "Phone",
   "contact.formlabel5": "Message",
   "contact.formsubmit": "SUBMIT",
-
   "contact.placeholder1": "Enter your name",
   "contact.placeholder2": "Enter your company's name",
   "contact.placeholder3": "Enter your email",
   "contact.placeholder4": "+00 99 123456789",
-  "contact.placeholder5": "Enter your message here"
+  "contact.placeholder5": "Enter your message here",
+  "contact.navigationbutton": "INÍCIO"
 }

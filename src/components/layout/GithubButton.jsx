@@ -4,7 +4,7 @@ import "../../i18n";
 import { useTranslation } from "react-i18next";
 
 const GithubButton = () => {
-  const { t, i18n } = useTranslation(); // Hook para acessar as traduções
+  const { t } = useTranslation();
 
   return (
     <div className={styles.button}>

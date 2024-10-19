@@ -17,7 +17,7 @@ import ImgToDoList from "../../assets/imgs/todolist.png";
 import ImgPortfolio from "../../assets/imgs/home-portfolio-light.png";
 
 const Works = () => {
-  const { t, i18n } = useTranslation(); // Hook para acessar as traduções
+  const { t } = useTranslation();
 
   return (
     <div className={styles.container}>

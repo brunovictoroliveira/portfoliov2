@@ -153,26 +153,6 @@ img {
 /*end RESET
 --------------------*/
 
-/* Abordagem antiga */
-
-/* :root {
-  color-scheme: dark light;
-  background-color: light-dark(var(--white), var(--black));
-  color: light-dark(var(--darkgray), var(--white));
-
-  --pink: #ff003d;
-  --blue: #00b2ff;
-  --darkblue: #0092d1;
-  --lightpurple: #8c54b7;
-  --purple: #662d91;
-  --white: #ffffff;
-  --ice: #ebebeb;
-  --lightgray: #c0c0c0;
-  --gray: #888888;
-  --darkgray: #222222;
-  --black: #1b1b1b;
-} */
-
 :root {
   --pink: #ff003d;
   --blue: #00b2ff;
@@ -219,8 +199,6 @@ img {
   --theme-button-circle-bg: var(--black);
 }
 
-/* \/ Testar aqui ou em App.css */
-
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -235,3 +213,12 @@ font-family: "DM Serif Display", serif;
 font-family: "Roboto Slab", serif;
 font-family: "Gowun Batang", serif;
 */
+
+@media (max-width: 971px) {
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

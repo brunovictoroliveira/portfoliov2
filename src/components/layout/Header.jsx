@@ -11,62 +11,68 @@ import Logotipo from "./Logotipo";
 import LanguageButtons from "./LanguageButtons";
 
 const Header = ({ currentTheme, toggleTheme }) => {
-  const { t, i18n } = useTranslation(); // Hook para acessar as traduções
+  const { t } = useTranslation();
 
   return (
-    <>
+    <div className={styles.headerBg}>
       <header className={styles.header}>
         <Logotipo currentTheme={currentTheme} />
-        <nav>
-          <ul>
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? styles.selected : styles.notSelected
-                }
-              >
-                {t("nav.option1")}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/skills"
-                className={({ isActive }) =>
-                  isActive ? styles.selected : styles.notSelected
-                }
-              >
-                {t("nav.option2")}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/works"
-                className={({ isActive }) =>
-                  isActive ? styles.selected : styles.notSelected
-                }
-              >
-                {t("nav.option3")}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive ? styles.selected : styles.notSelected
-                }
-              >
-                {t("nav.option4")}
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
-        <div className={styles.ajustes}>
-          <ThemeButton currentTheme={currentTheme} toggleTheme={toggleTheme} />
-          <LanguageButtons />
+        <div className={styles.menuButton}></div>
+        <div className={styles.menu}>
+          <nav className={styles.nav}>
+            <ul>
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? styles.selected : styles.notSelected
+                  }
+                >
+                  {t("nav.option1")}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/skills"
+                  className={({ isActive }) =>
+                    isActive ? styles.selected : styles.notSelected
+                  }
+                >
+                  {t("nav.option2")}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/works"
+                  className={({ isActive }) =>
+                    isActive ? styles.selected : styles.notSelected
+                  }
+                >
+                  {t("nav.option3")}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive ? styles.selected : styles.notSelected
+                  }
+                >
+                  {t("nav.option4")}
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+          <div className={styles.ajustes}>
+            <ThemeButton
+              currentTheme={currentTheme}
+              toggleTheme={toggleTheme}
+            />
+            <LanguageButtons />
+          </div>
         </div>
       </header>
-    </>
+    </div>
   );
 };
 

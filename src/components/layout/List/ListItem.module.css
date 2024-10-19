@@ -134,3 +134,99 @@
   background-image: url("../../../assets/icons/oracle.svg");
   background-repeat: no-repeat;
 }
+
+@media (min-width: 972px) and (max-width: 1280px) {
+  .text {
+    font-size: 1.3rem;
+    padding-left: 0.7rem;
+  }
+
+  .html5 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .css3 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .js {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ts {
+    width: 50px;
+    height: 50px;
+  }
+
+  .react {
+    width: 50px;
+    height: 50px;
+  }
+
+  .redux {
+    width: 50px;
+    height: 50px;
+  }
+
+  .node {
+    width: 50px;
+    height: 50px;
+  }
+  .mongodb {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mongoose {
+    width: 50px;
+    height: 50px;
+  }
+
+  .firebase {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sql {
+    width: 50px;
+    height: 50px;
+  }
+
+  .oracle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .c {
+    width: 50px;
+    height: 50px;
+  }
+
+  .java {
+    width: 50px;
+    height: 50px;
+  }
+
+  .python {
+    width: 50px;
+    height: 50px;
+  }
+
+  .android {
+    width: 50px;
+    height: 50px;
+  }
+
+  .figma {
+    width: 50px;
+    height: 50px;
+  }
+
+  .oracle {
+    width: 50px;
+    height: 50px;
+  }
+}

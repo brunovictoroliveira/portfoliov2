@@ -6,13 +6,25 @@
 .title {
   font-family: "DM Serif Display", serif;
   font-size: 4rem;
-
-  /* color: light-dark(var(--gray), var(--white)); */
 }
-
-/* Nova abordagem */
 
 .title {
   color: var(--title-color);
   transition: color 0.3s ease;
+}
+
+@media (max-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 971px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .titleBox {
+    width: auto;
+  }
 }

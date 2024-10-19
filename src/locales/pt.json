@@ -31,10 +31,10 @@
   "contact.formlabel4": "Telefone",
   "contact.formlabel5": "Mensagem",
   "contact.formsubmit": "ENVIAR",
-
   "contact.placeholder1": "Digite seu nome",
   "contact.placeholder2": "Digite o nome da sua empresa",
   "contact.placeholder3": "Digite seu e-mail",
   "contact.placeholder4": "+00 99 123456789",
-  "contact.placeholder5": "Digite sua mensagem aqui"
+  "contact.placeholder5": "Digite sua mensagem aqui",
+  "contact.navigationbutton": "INÍCIO"
 }

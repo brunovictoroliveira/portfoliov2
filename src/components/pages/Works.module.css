@@ -59,3 +59,51 @@
 .card:hover .overlay {
   opacity: 1;
 }
+
+@media (min-width: 1281px) and (max-width: 1919px) {
+  .container {
+    padding: 2rem 100px;
+  }
+}
+
+@media (min-width: 972px) and (max-width: 1370px) {
+  .container {
+    padding: 2rem 50px;
+    gap: 2.2rem;
+  }
+
+  .mainBox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  .card {
+    width: auto;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 971px) {
+  .container {
+    padding: 4rem 50px;
+    gap: 3rem;
+
+    align-items: center;
+  }
+
+  .mainBox {
+    grid-template-columns: auto;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 668px;
+    height: auto;
+
+    border-radius: 20px;
+  }
+}

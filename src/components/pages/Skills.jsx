@@ -11,7 +11,7 @@ import ListItem from "../layout/List/ListItem";
 import Button from "../layout/Button";
 
 const Skills = () => {
-  const { t, i18n } = useTranslation(); // Hook para acessar as traduções
+  const { t } = useTranslation();
 
   return (
     <div className={styles.container}>

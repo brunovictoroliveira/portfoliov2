@@ -1,0 +1,8 @@
+@media (max-width: 971px) {
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
