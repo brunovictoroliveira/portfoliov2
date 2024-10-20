@@ -135,7 +135,7 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: 972px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
   .text {
     font-size: 1.3rem;
     padding-left: 0.7rem;

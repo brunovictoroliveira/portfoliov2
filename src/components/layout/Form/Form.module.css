@@ -107,3 +107,19 @@ textarea:focus {
     width: 340px;
   }
 }
+
+@media (max-width: 450px) {
+  .topSection {
+    flex-direction: column;
+  }
+
+  input,
+  textarea {
+    width: 300px;
+  }
+
+  .bottomSection {
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+}

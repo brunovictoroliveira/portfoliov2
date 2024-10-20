@@ -55,10 +55,11 @@
 
     align-items: center;
 
-    width: auto;
+    /* width: auto; */
   }
 
   .mainBox {
+    display: flex;
     flex-direction: column;
     align-items: center;
 
@@ -67,5 +68,12 @@
 
   .box {
     width: fit-content;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: auto;
+    padding: 3rem 0;
   }
 }

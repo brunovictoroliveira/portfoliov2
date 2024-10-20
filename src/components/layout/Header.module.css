@@ -201,3 +201,9 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 450px) {
+  .header {
+    width: 350px;
+  }
+}

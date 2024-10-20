@@ -163,7 +163,7 @@
     align-items: center;
     justify-content: center;
 
-    z-index: 2;
+    z-index: 1;
   }
 
   .photo {
@@ -187,5 +187,58 @@
 
   .buttonOutside {
     display: flex;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    height: 91.3vh;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 5.3rem 0 3rem;
+    gap: 0;
+  }
+
+  .mainBox {
+    width: 350px;
+  }
+
+  .title {
+    font-size: 2.1rem;
+    padding-bottom: 2rem;
+  }
+
+  .summary {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .photo {
+    position: absolute;
+
+    top: 80px;
+
+    background-size: cover;
+    width: 100vw;
+    height: 91.3vh;
+
+    background-position: center;
+    background-position-x: 40%;
+
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    border-radius: 0;
+
+    opacity: 30%;
+    z-index: -1;
   }
 }

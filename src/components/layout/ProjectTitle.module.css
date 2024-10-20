@@ -1,0 +1,52 @@
+.titleBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: fit-content;
+
+  min-width: auto;
+  max-width: 700px;
+
+  margin-bottom: 1.5rem;
+}
+
+.redLine {
+  width: 8px;
+  height: 1.6rem;
+  background-color: var(--pink);
+}
+
+.blueLine {
+  width: 8px;
+  height: 1.6rem;
+  background-color: var(--blue);
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+@media (max-width: 450px) {
+  .titleBox {
+    max-width: 350px;
+    margin-bottom: 1rem;
+  }
+
+  .redLine {
+    width: 8px;
+    height: 1.4rem;
+  }
+
+  .blueLine {
+    width: 8px;
+    height: 1.4rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    padding-left: 0.6rem;
+  }
+}
