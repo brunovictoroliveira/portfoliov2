@@ -1,0 +1,47 @@
+/* MENU BUTTON -------------- START */
+
+.menuButton {
+  display: flex;
+  margin-left: auto;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  justify-content: space-evenly;
+  z-index: 2;
+}
+
+.menuLine {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  position: absolute;
+  left: 2.5px;
+  transition: transform 0.3s;
+}
+
+.menuLine:nth-child(1) {
+  top: 4px; /* ajusta a posição da linha */
+}
+
+.menuLine:nth-child(2) {
+  top: 12.5px; /* ajusta a posição da linha */
+}
+
+.menuLine:nth-child(3) {
+  top: 20px; /* ajusta a posição da linha */
+}
+
+.menuButton.active .menuLine:nth-child(1) {
+  transform: rotate(45deg) translate(5.5px, 5.5px);
+}
+
+.menuButton.active .menuLine:nth-child(2) {
+  opacity: 0;
+}
+
+.menuButton.active .menuLine:nth-child(3) {
+  transform: rotate(-45deg) translate(5.5px, -5.5px);
+}
+
+/* MENU BUTTON -------------- END */

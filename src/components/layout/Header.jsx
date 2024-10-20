@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 import ThemeButton from "./ThemeButton";
 import Logotipo from "./Logotipo";
 import LanguageButtons from "./LanguageButtons";
+import MenuButton from "./MenuButton";
 
 const Header = ({ currentTheme, toggleTheme }) => {
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ const Header = ({ currentTheme, toggleTheme }) => {
     <div className={styles.headerBg}>
       <header className={styles.header}>
         <Logotipo currentTheme={currentTheme} />
-        <div className={styles.menuButton}></div>
+        <MenuButton />
         <div className={styles.menu}>
           <nav className={styles.nav}>
             <ul>

@@ -27,23 +27,20 @@
 textarea {
   width: 400px;
   height: 342px;
-
-  border: none;
 }
 
 input {
   width: 250px;
   height: 2.5rem;
   margin-bottom: 2rem;
-
-  border: 1px solid var(--gray);
 }
 
-textarea,
-input {
+input,
+textarea {
   background-color: var(--input-bg-color);
   color: var(--input-text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1px solid var(--gray) !important;
 }
 
 input:last-child {

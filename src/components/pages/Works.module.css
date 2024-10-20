@@ -17,17 +17,15 @@
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 3rem;
+  grid-gap: 2rem;
   justify-content: center;
 }
 
 .card {
-  width: 750px;
-  height: 422.54px;
+  width: 730px;
+  height: 410.63px;
   position: relative;
   overflow: hidden;
-
-  gap: 2rem;
 }
 
 .card .image {
