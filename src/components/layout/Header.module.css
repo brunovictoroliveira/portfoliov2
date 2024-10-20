@@ -89,10 +89,6 @@
   background-color: var(--selected-bg-color);
 }
 
-.menuButton {
-  display: none;
-}
-
 /* MEDIA QUERIES */
 
 @media (max-width: 1919px) {

@@ -35,9 +35,11 @@ const Home = () => {
             <span className={styles.pink}>{t("home.fifthsentence")}</span>
             <br></br>
           </div>
-          <p className={styles.summary}>{t("home.summaryp1")}</p>
-          <br></br>
-          <p className={styles.summary}>{t("home.summaryp2")}</p>
+          <div className={styles.summaryBox}>
+            <p className={styles.summary}>{t("home.summaryp1")}</p>
+            <br></br>
+            <p className={styles.summary}>{t("home.summaryp2")}</p>
+          </div>
           {/* Renderizar o botão apenas para telas desktop */}
           {isDesktop && (
             <Link to="/skills">

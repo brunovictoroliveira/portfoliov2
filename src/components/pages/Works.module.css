@@ -23,7 +23,7 @@
 
 .card {
   width: 730px;
-  height: 410.63px;
+  height: 420px;
   position: relative;
   overflow: hidden;
 }
@@ -64,13 +64,18 @@
   opacity: 1;
 }
 
-@media (min-width: 1281px) and (max-width: 1919px) {
+@media (max-width: 1919px) {
   .container {
     padding: 2rem 100px;
   }
+
+  .card {
+    width: 640px;
+    height: 370px;
+  }
 }
 
-@media (min-width: 972px) and (max-width: 1370px) {
+@media (max-width: 1370px) {
   .container {
     padding: 2rem 50px;
     gap: 2.2rem;
