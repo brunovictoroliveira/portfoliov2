@@ -40,7 +40,6 @@ const Home = () => {
             <br></br>
             <p className={styles.summary}>{t("home.summaryp2")}</p>
           </div>
-          {/* Renderizar o botão apenas para telas desktop */}
           {isDesktop && (
             <Link to="/skills">
               <Button title={t("home.navigationbutton")} />
@@ -49,7 +48,6 @@ const Home = () => {
         </div>
         <div className={styles.photo}></div>
       </div>
-      {/* Renderizar o botão fora dos boxes para tablets e smartphones */}
       {!isDesktop && (
         <div className={styles.buttonOutside}>
           <Link to="/skills">
