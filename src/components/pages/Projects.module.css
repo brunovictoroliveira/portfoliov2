@@ -150,3 +150,15 @@
     padding-bottom: 20px;
   }
 }
+
+/* TESTAR COMPORTAMENTO DO HOVER EM MOBILE DEVICES */
+
+/* @media (hover: hover) and (pointer: fine) {
+  .card:hover .image {
+    transform: scale(1.05);
+  }
+
+  .card:hover .overlay {
+    opacity: 1;
+  }
+} */
