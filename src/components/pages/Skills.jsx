@@ -44,7 +44,7 @@ const Skills = () => {
           <ListItem icon="figma" text="Figma" />
         </div>
       </div>
-      <Link to="/works">
+      <Link to="/projects">
         <Button title={t("skills.navigationbutton")} />
       </Link>
     </div>

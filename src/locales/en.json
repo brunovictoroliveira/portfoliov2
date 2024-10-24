@@ -1,7 +1,7 @@
 {
   "nav.option1": "Home",
   "nav.option2": "Skills",
-  "nav.option3": "Works",
+  "nav.option3": "Projects",
   "nav.option4": "Contact",
 
   "home.firstsentence": "Hi! ",
@@ -18,11 +18,11 @@
   "skills.subtitle1": "Front-End Stack",
   "skills.subtitle2": "Back-End Stack",
   "skills.subtitle3": "Other languages and techs",
-  "skills.navigationbutton": "WORKS",
+  "skills.navigationbutton": "PROJECTS",
 
-  "works.title": "Works",
-  "works.navigationbutton": "CONTACT",
-  "works.githubbutton": "Access repository",
+  "projects.title": "Projects",
+  "projects.navigationbutton": "CONTACT",
+  "projects.githubbutton": "Access repository",
 
   "contact.title": "Get in touch",
   "contact.formlabel1": "Name",
@@ -36,5 +36,5 @@
   "contact.placeholder3": "Enter your email",
   "contact.placeholder4": "+00 99 123456789",
   "contact.placeholder5": "Enter your message here",
-  "contact.navigationbutton": "INÍCIO"
+  "contact.navigationbutton": "HOME"
 }

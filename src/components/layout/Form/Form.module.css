@@ -105,6 +105,17 @@ textarea:focus {
   }
 }
 
+@media (max-width: 740px) {
+  .topSection {
+    flex-direction: column;
+  }
+
+  input,
+  textarea {
+    width: 350px;
+  }
+}
+
 @media (max-width: 450px) {
   .topSection {
     flex-direction: column;

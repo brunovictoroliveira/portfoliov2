@@ -9,7 +9,7 @@ import Header from "./components/layout/Header.jsx";
 
 import Home from "./components/pages/Home.jsx";
 import Skills from "./components/pages/Skills.jsx";
-import Works from "./components/pages/Works.jsx";
+import Projects from "./components/pages/Projects.jsx";
 import Contact from "./components/pages/Contact.jsx";
 
 function App() {
@@ -43,8 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/works" element={<Works />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>

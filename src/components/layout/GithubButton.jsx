@@ -9,7 +9,7 @@ const GithubButton = () => {
   return (
     <div className={styles.button}>
       <div className={styles.githubIcon}></div>
-      <div className={styles.text}>{t("works.githubbutton")}</div>
+      <div className={styles.text}>{t("projects.githubbutton")}</div>
     </div>
   );
 };

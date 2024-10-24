@@ -1,7 +1,7 @@
 {
   "nav.option1": "Início",
   "nav.option2": "Habilidades",
-  "nav.option3": "Trabalhos",
+  "nav.option3": "Projetos",
   "nav.option4": "Contato",
 
   "home.firstsentence": "Olá!",
@@ -18,11 +18,11 @@
   "skills.subtitle1": "Front-End Stack",
   "skills.subtitle2": "Back-End Stack",
   "skills.subtitle3": "Outras linguagens e techs",
-  "skills.navigationbutton": "TRABALHOS",
+  "skills.navigationbutton": "PROJETOS",
 
-  "works.title": "Trabalhos",
-  "works.navigationbutton": "CONTATO",
-  "works.githubbutton": "Acessar repositório",
+  "projects.title": "Projetos",
+  "projects.navigationbutton": "CONTATO",
+  "projects.githubbutton": "Acessar repositório",
 
   "contact.title": "Entre em contato",
   "contact.formlabel1": "Nome",

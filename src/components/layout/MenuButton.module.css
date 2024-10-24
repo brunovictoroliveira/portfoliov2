@@ -17,7 +17,7 @@
   .menuLine {
     width: 25px;
     height: 3px;
-    background-color: var(--white);
+    background-color: var(--menu-button-color);
     position: absolute;
     left: 2.5px;
     transition: transform 0.3s;

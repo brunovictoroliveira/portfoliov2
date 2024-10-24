@@ -9,7 +9,7 @@ const Logotipo = ({ currentTheme }) => {
   const logo = currentTheme === "dark" ? logoDark : logoLight;
   return (
     <div
-      className={styles.Logotipo}
+      className={styles.logotipo}
       style={{ backgroundImage: `url(${logo})` }}
     />
   );

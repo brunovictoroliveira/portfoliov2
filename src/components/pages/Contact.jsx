@@ -14,10 +14,10 @@ import Button from "../layout/Button";
 const Contact = () => {
   const { t } = useTranslation();
 
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1280);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1370);
 
   const updateMedia = () => {
-    setIsDesktop(window.innerWidth > 1024);
+    setIsDesktop(window.innerWidth > 1370);
   };
 
   useEffect(() => {
@@ -27,29 +27,29 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.leftSection}>
-        <PageTitle title={t("contact.title")} />
+      <PageTitle title={t("contact.title")} />
+      <div className={styles.mainBox}>
         <Form />
-      </div>
-      <div className={styles.rightSection}>
-        <div className={styles.buttons}>
-          <Link
-            to="https://www.linkedin.com/in/brunovictorlima/"
-            target="_blank"
-          >
-            <div className={styles.linkedin}></div>
-          </Link>
-          <Link to="https://github.com/brunovictorlima" target="_blank">
-            <div className={styles.github}></div>
-          </Link>
+        <div className={styles.rightSection}>
+          <div className={styles.buttons}>
+            <Link
+              to="https://www.linkedin.com/in/brunovictorlima/"
+              target="_blank"
+            >
+              <div className={styles.linkedin}></div>
+            </Link>
+            <Link to="https://github.com/brunovictorlima" target="_blank">
+              <div className={styles.github}></div>
+            </Link>
+          </div>
+          {isDesktop && <div className={styles.bvLogoOutlines}></div>}
         </div>
-        {isDesktop && <div className={styles.bvLogoOutlines}></div>}
+        {!isDesktop && (
+          <Link to="/">
+            <Button title={t("contact.navigationbutton")} />
+          </Link>
+        )}
       </div>
-      {!isDesktop && (
-        <Link to="/">
-          <Button title={t("contact.navigationbutton")} />
-        </Link>
-      )}
     </div>
   );
 };

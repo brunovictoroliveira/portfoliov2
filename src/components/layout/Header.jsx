@@ -1,10 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 
 import styles from "./Header.module.css";
 
 import "../../i18n";
 import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react";
 
 import ThemeButton from "./ThemeButton";
 import Logotipo from "./Logotipo";
@@ -14,12 +15,24 @@ import MenuButton from "./MenuButton";
 const Header = ({ currentTheme, toggleTheme }) => {
   const { t } = useTranslation();
 
+  const [menuActive, setMenuActive] = useState(false);
+
+  const location = useLocation();
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
+  useEffect(() => {
+    setMenuActive(false);
+  }, [location]);
+
   return (
     <div className={styles.headerBg}>
       <header className={styles.header}>
         <Logotipo currentTheme={currentTheme} />
-        <MenuButton />
-        <div className={styles.menu}>
+        <MenuButton isActive={menuActive} onClick={toggleMenu} />
+        <div className={menuActive ? styles.menuActived : styles.menu}>
           <nav className={styles.nav}>
             <ul>
               <li>
@@ -44,7 +57,7 @@ const Header = ({ currentTheme, toggleTheme }) => {
               </li>
               <li>
                 <NavLink
-                  to="/works"
+                  to="/projects"
                   className={({ isActive }) =>
                     isActive ? styles.selected : styles.notSelected
                   }

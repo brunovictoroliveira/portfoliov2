@@ -1,8 +1,8 @@
-import styles from "./Works.module.css";
+import styles from "./Projects.module.css";
 
 import { Link } from "react-router-dom";
 
-import "../../i18n";
+import "../../i18n.js";
 import { useTranslation } from "react-i18next";
 
 import PageTitle from "../layout/PageTitle.jsx";
@@ -17,12 +17,12 @@ import ImgCoins from "../../assets/imgs/gerenciador-de-projetos-react.png";
 import ImgToDoList from "../../assets/imgs/todolist.png";
 import ImgPortfolio from "../../assets/imgs/home-portfolio-light.png";
 
-const Works = () => {
+const Projects = () => {
   const { t } = useTranslation();
 
   return (
     <div className={styles.container}>
-      <PageTitle title={t("works.title")} />
+      <PageTitle title={t("projects.title")} />
       <div className={styles.mainBox}>
         <div className={styles.card}>
           <ProjectTitle
@@ -139,10 +139,10 @@ const Works = () => {
         </div>
       </div>
       <Link to="/contact">
-        <Button title={t("works.navigationbutton")} />
+        <Button title={t("projects.navigationbutton")} />
       </Link>
     </div>
   );
 };
 
-export default Works;
+export default Projects;

@@ -172,6 +172,7 @@ img {
   --text-color: var(--darkgray);
   --input-bg-color: var(--ice);
   --input-text-color: var(--darkgray);
+  --menu-button-color: var(--darkgray);
   --button-border-color: var(--darkgray);
   --button-hover-border-color: var(--blue);
   --button-hover-text-color: var(--blue);
@@ -188,6 +189,7 @@ img {
   --text-color: var(--white);
   --input-bg-color: var(--white);
   --input-text-color: var(--darkgray);
+  --menu-button-color: var(--white);
   --button-border-color: var(--white);
   --button-hover-border-color: var(--pink);
   --button-hover-text-color: var(--pink);

@@ -230,3 +230,10 @@
     height: 50px;
   }
 }
+
+@media (max-width: 450px) {
+  .text {
+    font-size: 1rem;
+    padding-left: 0.7rem;
+  }
+}

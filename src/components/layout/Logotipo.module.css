@@ -1,5 +1,12 @@
-.Logotipo {
+.logotipo {
   width: 80px;
   height: 80px;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1210px) {
+  .logotipo {
+    width: 60px;
+    height: 60px;
+  }
 }
