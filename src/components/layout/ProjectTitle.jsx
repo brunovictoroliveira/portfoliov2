@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
 import styles from "./ProjectTitle.module.css";
+
+import PropTypes from "prop-types";
 
 const ProjectTitle = ({ projectTitle }) => {
   return (
@@ -9,6 +10,10 @@ const ProjectTitle = ({ projectTitle }) => {
       <h1 className={styles.title}>{projectTitle}</h1>
     </div>
   );
+};
+
+ProjectTitle.propTypes = {
+  projectTitle: PropTypes.string,
 };
 
 export default ProjectTitle;

@@ -91,8 +91,8 @@ const Header = ({ currentTheme, toggleTheme }) => {
 };
 
 Header.propTypes = {
-  currentTheme: PropTypes.oneOf(["light", "dark"]).isRequired, // Define que o tema deve ser 'light' ou 'dark'
-  toggleTheme: PropTypes.func.isRequired, // toggleTheme é uma função obrigatória
+  currentTheme: PropTypes.oneOf(["light", "dark"]).isRequired,
+  toggleTheme: PropTypes.func.isRequired,
 };
 
 export default Header;

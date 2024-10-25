@@ -16,7 +16,7 @@ const Logotipo = ({ currentTheme }) => {
 };
 
 Logotipo.propTypes = {
-  currentTheme: PropTypes.oneOf(["light", "dark"]).isRequired, // Valida o tema como 'light' ou 'dark'
+  currentTheme: PropTypes.oneOf(["light", "dark"]).isRequired,
 };
 
 export default Logotipo;

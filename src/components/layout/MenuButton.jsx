@@ -15,8 +15,8 @@ const MenuButton = ({ isActive, onClick }) => {
 };
 
 MenuButton.propTypes = {
-  isActive: PropTypes.bool.isRequired, // Define se o menu está ativo ou não
-  onClick: PropTypes.func.isRequired, // Função para lidar com o clique
+  isActive: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default MenuButton;

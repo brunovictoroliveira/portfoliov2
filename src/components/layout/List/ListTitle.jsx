@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
 import styles from "./ListTitle.module.css";
+
+import PropTypes from "prop-types";
 
 const ListTitle = ({ listTitle }) => {
   return (
@@ -9,6 +10,10 @@ const ListTitle = ({ listTitle }) => {
       <h1 className={styles.title}>{listTitle}</h1>
     </div>
   );
+};
+
+ListTitle.propTypes = {
+  listTitle: PropTypes.string,
 };
 
 export default ListTitle;

@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
 import styles from "./ListItem.module.css";
+
+import PropTypes from "prop-types";
 
 const ListItem = ({ icon, text }) => {
   return (
@@ -8,6 +9,11 @@ const ListItem = ({ icon, text }) => {
       <h1 className={styles.text}>{text}</h1>
     </div>
   );
+};
+
+ListItem.propTypes = {
+  icon: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default ListItem;
