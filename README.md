@@ -1,6 +1,6 @@
 # Portfólio em React
 ## Aplicação Web desenvolvida com React, JavaScript, Vite, React Router DOM, i18next e EmailJS.
-Link do portfólio: https://brunovictorlima.github.io
+## Link do portfólio: https://brunovictorlima.github.io
 
 ### Este projeto é uma aplicação web responsiva criada com o objetivo de apresentar um portfólio de maneira moderna e intuitiva. Abaixo estão os principais recursos e tecnologias utilizados:
 
@@ -26,3 +26,8 @@ Principais Funcionalidades:
 
 - Troca de Idioma: Os botões de idioma indicam o idioma ativo com uma diferenciação de cor nas bandeiras (colorida para ativo, escala de cinza para inativo). Isso permite a mudança rápida de idioma com um único clique ou toque.
 
+## Telas Dekstop / Mobile (dark / light theme)
+
+![desktop version](https://github.com/user-attachments/assets/2af7b85e-5efb-41b4-b39d-e1ffa520c770)
+
+![mobile screens](https://github.com/user-attachments/assets/20572c27-085b-4ae7-872d-8a01b608eea1)
