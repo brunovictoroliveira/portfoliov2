@@ -28,6 +28,6 @@ Principais Funcionalidades:
 
 ## Telas Dekstop / Mobile (dark / light theme)
 
-![desktop version](https://github.com/user-attachments/assets/2af7b85e-5efb-41b4-b39d-e1ffa520c770)
+![desktop screens](https://github.com/user-attachments/assets/280dc99a-2ac0-4bb2-8e00-559c2cd8d65c)
 
-![mobile screens](https://github.com/user-attachments/assets/20572c27-085b-4ae7-872d-8a01b608eea1)
+![mobile screens](https://github.com/user-attachments/assets/99c22fb4-2359-4a9f-9c72-c12080158dc6)
