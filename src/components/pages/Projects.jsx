@@ -16,6 +16,7 @@ import ImgBlog from "../../assets/imgs/blog.png";
 import ImgToDoList from "../../assets/imgs/todolist.png";
 import ImgTasklist from "../../assets/imgs/tasklist.png";
 import ImgPortfolio from "../../assets/imgs/home-portfolio-light.png";
+import ImgChatbot from "../../assets/imgs/chatbot.png";
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -24,6 +25,25 @@ const Projects = () => {
     <div className={styles.container}>
       <PageTitle title={t("projects.title")} />
       <div className={styles.mainBox}>
+        <div className={styles.card}>
+          <ProjectTitle
+            projectTitle="Chatbot CS2 Team (React)"
+            className={styles.projectTitle}
+          />
+          <img
+            src={ImgChatbot}
+            alt="Thumbnail Chatbot CS2 Team"
+            className={styles.image}
+          />
+          <div className={styles.overlay}>
+            <Link
+              to="https://github.com/brunovictoroliveira/chatbot-cs2team"
+              target="_blank"
+            >
+              <GithubButton />
+            </Link>
+          </div>
+        </div>
         <div className={styles.card}>
           <ProjectTitle
             projectTitle="Portfolio (React)"

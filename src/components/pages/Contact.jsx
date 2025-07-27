@@ -32,10 +32,13 @@ const Contact = () => {
         <Form />
         <div className={styles.rightSection}>
           <div className={styles.buttons}>
-            <Link to="https://linkedin.com/in/brunovictorlima/" target="_blank">
+            <Link
+              to="https://linkedin.com/in/brunovictoroliveira/"
+              target="_blank"
+            >
               <div className={styles.linkedin}></div>
             </Link>
-            <Link to="https://github.com/brunovictorlima" target="_blank">
+            <Link to="https://github.com/brunovictoroliveira" target="_blank">
               <div className={styles.github}></div>
             </Link>
           </div>

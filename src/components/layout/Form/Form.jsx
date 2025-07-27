@@ -33,10 +33,10 @@ const Form = () => {
 
     emailjs
       .send(
-        "service_v6hdm0f",
+        "service_1b8u0gg",
         "template_r3c30yc",
         templateParams,
-        "tE4irlkir5OHSVQdP"
+        "td6UI8fuhddLwsxIa"
       )
       .then(
         (response) => {
